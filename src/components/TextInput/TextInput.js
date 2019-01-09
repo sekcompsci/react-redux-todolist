@@ -1,4 +1,5 @@
 import React from 'react';
+import Styles from './TextInput.module.scss';
 
 class TextInput extends React.Component {
     state = {
@@ -22,7 +23,7 @@ class TextInput extends React.Component {
     render() {
         return (
             <input
-                className="new-todo"
+                className={Styles.newTodo}
                 placeholder="What needs to be done?"
                 value={this.state.text}
                 onChange={this.handleChange}

@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Styles from './TodoItem.module.scss';
 
 const TodoItem = props => (
   <li>
-    <div className="view">
+    <div className={Styles.view}>
       <label>{props.todo.text}</label>
       <button
-        className="destroy"
+        className={Styles.destroy}
         onClick={() => props.removeTodo(props.todo.id)}
       />
     </div>

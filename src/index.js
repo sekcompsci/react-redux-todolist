@@ -4,7 +4,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import 'react-app-polyfill/ie11';
 import 'normalize.css';
-import 'todomvc-app-css/index.css';
 import App from './components/App';
 import reducers from './reducers';
 import * as serviceWorker from './serviceWorker';
